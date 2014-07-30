@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=EWS Mail
+Comment=
+Type=AkonadiResource
+Exec=akonadi_ews_resource
+Icon=text-directory
+
+X-Akonadi-MimeTypes=message/rfc822
+X-Akonadi-Capabilities=Resource
+X-Akonadi-Identifier=akonadi_ews_resource
