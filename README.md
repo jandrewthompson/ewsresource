@@ -78,8 +78,3 @@ Project homepage is http://www.akonadi-project.org/
 IRC: #akonadi on freenode network
 
 ----------------------------
-Please send all comments to:
-Kevin Krammer
-kevin@akonadi-project.org
-
-Last update: July 2009
