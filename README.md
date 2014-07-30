@@ -1,5 +1,6 @@
 What The Heck Is This??
--=-=-=-=-=-=-=
+=======================
+
 Good Question.
 
 Mostly, this is a place for me to fiddle around with KDE and Akonadi 
@@ -14,48 +15,57 @@ Not my favorite language by any stretch, but I feel it's worth remaining compete
 
 
 How To Build
--=-=-=-=-=-=
+===========
 
---- On Unix:
-
+### On Unix:
+```
 cd <project_name_path>
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS -DCMAKE_BUILD_TYPE=Debug ..      <- do not forget the ..
 make
 make install or su -c 'make install'
+```
 
 where $KDEDIRS points to your KDE installation prefix 
     ( probably /usr )
 
 to uninstall the project:
+```
 make uninstall or su -c 'make uninstall'
+```
 
 Note: you can use another build path. Then cd in your build dir and:
+```
 export KDE_SRC=path_to_your_src
 cmake $KDE_SRC -DCMAKE_INSTALL_PREFIX=$KDEDIRS -DCMAKE_BUILD_TYPE=Debug
+```
 
---- On Windows:
+### On Windows:
 
+```
 cd <project_name_path>
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=%KDEDIRS% -DCMAKE_BUILD_TYPE=Debug ..      <- do not forget the ..
 [n]make
 [n]make install
+```
 
 where %KDEDIRS% points to your KDE installation prefix.
 
 to uninstall the project:
+```
 [n]make uninstall
+```
 
-Note: use nmake if you're building with the Visual Studio compiler, or make
-if you're using the minGW compiler
+*Note: use nmake if you're building with the Visual Studio compiler, or make
+if you're using the minGW compiler*
 
 
 
 Documentation
--=-=-=-=-=-=-
+=============
 
 The Akonadi-KDE API documentation can be found here:
 http://api.kde.org/4.x-api/kdepimlibs-apidocs/akonadi/html/index.html
